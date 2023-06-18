@@ -1,3 +1,4 @@
+mod data_types;
 mod variables_and_mutability;
 
 fn main() {
