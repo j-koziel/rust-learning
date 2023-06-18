@@ -1,4 +1,4 @@
-fn main() {
+pub fn main() {
     // Mutability
     let mut x = 5;
     println!("The value of x is: {x}");
@@ -15,8 +15,7 @@ fn main() {
     // basically, you can use the same name for a variable and you won't get errors
     let spaces: &str = "    ";
     println!("{spaces}");
-    
+
     let spaces: usize = spaces.len();
     println!("{spaces}");
-
 }
