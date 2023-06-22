@@ -22,7 +22,7 @@ pub fn main() {
     // signed: -(2^n-1) -> 2^n-1 - 1
 
     // Floating-point types
-    // There are only 2 primitiv types for floating point numbers (f32 and f64).
+    // There are only 2 primitive types for floating point numbers (f32 and f64).
     // When using type inference, it defaults to f64 because the speed of f32 and f64 is similar on modern CPUs
     // Also, all floating point numbers are signed.
     // example:
