@@ -8,4 +8,5 @@ fn main() {
     println!("#############################################");
 
     println!("This is all about data types!");
+    data_types::main();
 }

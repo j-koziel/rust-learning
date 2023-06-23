@@ -28,4 +28,31 @@ pub fn main() {
     // example:
     let x = 2.0; // f64
     let y: f32 = 3.0; // f32
+
+    // Numeric operations
+    // addition
+    let sum = 5 + 10;
+    println!("addition");
+    println!("{sum}");
+    println!();
+
+    let difference = 95.5 - 4.3;
+    println!("difference");
+    println!("{difference}");
+    println!();
+
+    let product = 4 * 30;
+    println!("product");
+    println!("{product}");
+    println!();
+
+    let quotient = 56.7 / 32.2;
+    println!("quotient (literally division)");
+    println!("{quotient}");
+    println!();
+
+    let remainder = 43 % 5;
+    println!("remainder");
+    println!("{remainder}");
+    println!();
 }
