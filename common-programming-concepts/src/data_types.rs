@@ -55,4 +55,21 @@ pub fn main() {
     println!("remainder");
     println!("{remainder}");
     println!();
+
+    
+    // The boolean type
+    // Basically like any other language -> two possible values of true and false
+    // one byte in size
+    let t = true;
+    let f: bool = false;
+
+
+    // The character type
+    // char literals are specified with single quotes whereas string literal use double quotes
+    // Interestingly it can store more than just ASCII -> emojis, kanji, karagana etc can also be used
+    // Human intuition with what a character is may not match up with what rust sees chars as
+    // Examples:
+    let c = 'z';
+    let z: char = 'Z';
+    let heart_eyed_cat = '😻';
 }
