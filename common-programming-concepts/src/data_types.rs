@@ -29,33 +29,7 @@ pub fn main() {
     let x = 2.0; // f64
     let y: f32 = 3.0; // f32
 
-    // Numeric operations
-    // addition
-    let sum = 5 + 10;
-    println!("addition");
-    println!("{sum}");
-    println!();
-
-    let difference = 95.5 - 4.3;
-    println!("difference");
-    println!("{difference}");
-    println!();
-
-    let product = 4 * 30;
-    println!("product");
-    println!("{product}");
-    println!();
-
-    let quotient = 56.7 / 32.2;
-    println!("quotient (literally division)");
-    println!("{quotient}");
-    println!();
-
-    let remainder = 43 % 5;
-    println!("remainder");
-    println!("{remainder}");
-    println!();
-
+    numeric_operations();
     
     // The boolean type
     // Basically like any other language -> two possible values of true and false
@@ -72,4 +46,72 @@ pub fn main() {
     let c = 'z';
     let z: char = 'Z';
     let heart_eyed_cat = '😻';
+
+
+    // Compound types
+    compound_types();
+
+}
+
+
+fn numeric_operations() -> () {
+    // Numeric operations
+    // addition
+    let sum = 5 + 10;
+    println!("addition");
+    println!("{sum}");
+    println!();
+
+    // subtraction
+    let difference = 95.5 - 4.3;
+    println!("difference");
+    println!("{difference}");
+    println!();
+
+    // multiplcation
+    let product = 4 * 30;
+    println!("product");
+    println!("{product}");
+    println!();
+
+    // division
+    let quotient = 56.7 / 32.2;
+    println!("quotient (literally division)");
+    println!("{quotient}");
+    println!();
+
+    // remainder
+    let remainder = 43 % 5;
+    println!("remainder");
+    println!("{remainder}");
+    println!();
+}
+
+fn compound_types() -> () {
+    // Tuples
+    // General way of grouping multiple values into one type.
+    // Once declared they cannot grow or shrink in size.
+    let tup: (i32, f64, u8) = (500, 6.4, 1);
+
+    // Then we use pattern matching to extract individual values from the tuple
+    // destructuring
+    let (x, y, z) = tup;
+    println!("Our first ever tuple:");
+    println!("0: {x}");
+    println!("1: {y}");
+    println!("2: {z}");
+
+    let five_hundred = tup.0;
+    let six_point_four = tup.1;
+    let one = tup.2;
+
+    // Accessing the values directly
+    println!("\nDirectly accessing the values");
+    println!("0: {five_hundred}");
+    println!("1: {six_point_four}");
+    println!("2: {one}");
+
+    // Empty tuples are called "units" -> ()
+    // They represent an empty value or empty return type
+    // This is implicitly returned if no return type specified
 }

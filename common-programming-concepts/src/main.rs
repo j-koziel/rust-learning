@@ -5,7 +5,7 @@ fn main() {
     println!("This is all about variables and mutability!");
     variables_and_mutability::main();
 
-    println!("#############################################");
+    println!("\n#############################################");
 
     println!("This is all about data types!");
     data_types::main();
