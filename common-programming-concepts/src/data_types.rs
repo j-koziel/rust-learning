@@ -114,4 +114,28 @@ fn compound_types() -> () {
     // Empty tuples are called "units" -> ()
     // They represent an empty value or empty return type
     // This is implicitly returned if no return type specified
+
+
+    // Arrays
+    // An array must have all its values of the same type
+    // AND arrays have a fixed length
+
+    // example
+    let a = [1, 2, 3, 4, 5];
+
+    // arrays should mostly be used when you know that the collection of values will not have to change in size...
+    // like the names of the months
+    let months = ["January", "February", "March", "April", "May", "June", "July",
+              "August", "September", "October", "November", "December"];
+
+    // statically typing an array:
+    // [type, length]
+    let b: [i32, 5] = [1, 2, 3, 4, 5];
+    let c = [3; 5]
+    // this lets you specify the same value for the whole array
+
+    // Accessing array elements
+    let first = a[0]
+    let second = a[1]
+
 }
